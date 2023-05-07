@@ -44,11 +44,11 @@ function SignIn({handleAuth}) {
     <p className="text-[#000000] text-[16px]">Sign in to your account</p>
 
     <div className="w-full flex space-x-4 mt-4">
-      <button className="w-[180px] font-body text-[12px] hover:scale-105 flex items-center justify-center gap-2 bg-white text-[#858585]  h-[30px] rounded-lg">
+      <button className="w-[50%] font-body text-[12px] hover:scale-105 flex items-center justify-center gap-2 bg-white text-[#858585]  h-[30px] rounded-lg">
       <img src={google} alt="google" className='object-contain h-6 rounded-full' />
         Sign in with Google
       </button>
-      <button className="w-[180px] font-body text-[12px] hover:scale-105 flex items-center justify-center gap-2 bg-white text-[#858585]  h-[30px] rounded-lg">
+      <button className="w-[50%] font-body text-[12px] hover:scale-105 flex items-center justify-center gap-2 bg-white text-[#858585]  h-[30px] rounded-lg">
         
       <img src={apple} alt="google" className='object-contain h-6 rounded-full' />
 
@@ -70,7 +70,7 @@ function SignIn({handleAuth}) {
         <input onChange={(event) => setValues((prev) => ({ ...prev, email: event.target.value }))}
           type="email"
           id="email"
-          className="w-[330px] bg-[#EAEAEA] h-[40px] rounded-lg p-2 outline-none"
+          className="w-[100%] md:w-[330px] bg-[#EAEAEA] h-[40px] rounded-lg p-2 outline-none"
         />
       </div>
 
@@ -84,7 +84,7 @@ function SignIn({handleAuth}) {
         <input onChange={(event) => setValues((prev) => ({ ...prev, pass: event.target.value }))}
           type="password"
           id="password"
-          className="w-[330px] bg-[#EAEAEA] h-[40px] rounded-lg p-2 outline-none "
+          className="w-[100%] md:w-[330px] bg-[#EAEAEA] h-[40px] rounded-lg p-2 outline-none "
         />
       </div>
 
