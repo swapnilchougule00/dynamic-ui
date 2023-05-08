@@ -8,7 +8,7 @@ import TopProductsChart from '../components/TopProductsChart';
 
 function DashBoard() {
   return (
-    <div className="w-full h-screen flex bg-[#DDDDDD] space-x-4 p-3">
+    <div className="w-full h-screen flex flex-col md:flex-row bg-[#DDDDDD] space-x-4 p-3">
         <SideBar />
       <div className="p-2 overflow-y-scroll scrollbar-hidden">
         <div className="flex justify-between  items-center">
