@@ -10,14 +10,14 @@ function Login() {
   }
 
   return (
-    <div className="min-h-screen  flex flex-col md:flex-row md:flex ">
+    <div className="min-h-screen  flex flex-col md:flex-row bg-gray-100 md:flex ">
       <div className="w-full h-52 md:h-screen md:w-1/3 bg-black flex justify-center items-center">
         <h1 className="font-body text-white text-5xl font-bold tracking-wide">
           Board.
         </h1>
       </div>
 
-      <div className=" md:w-2/3 flex items-center h-[69vh] md:h-[100vh] overflow-hidden justify-center bg-gray-100">
+      <div className=" md:w-2/3 flex items-center md:h-[100vh] overflow-hidden justify-center bg-gray-100">
         {show ? <SignIn handleAuth={handleAuth}/> : <Register handleAuth={handleAuth}/>}
       </div>
     </div>
