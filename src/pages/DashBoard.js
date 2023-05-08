@@ -8,10 +8,10 @@ import TopProductsChart from '../components/TopProductsChart';
 
 function DashBoard() {
   return (
-    <div className="w-full h-screen flex flex-col md:flex-row bg-[#DDDDDD] space-x-4 p-3">
+    <div className="w-full h-screen flex flex-col md:flex-row bg-[#DDDDDD] space-x-4 md:p-3">
         <SideBar />
       <div className="p-2 overflow-y-scroll scrollbar-hidden">
-        <div className="flex justify-between  items-center">
+        <div className="flex justify-between gap-1 items-center">
           <h1 className="font-body text-xl font-extrabold">Dashboard</h1>
           <div className="flex items-center gap-3">
             <input
