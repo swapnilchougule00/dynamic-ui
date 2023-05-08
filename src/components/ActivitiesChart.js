@@ -29,7 +29,7 @@ function ActivitiesChart() {
     ]
 
     return (
-        <div className='w-full p-2 px-4 bg-white mt-3 rounded-[20px] '>
+        <div className='w-full overflow-x-scroll md:overflow-hidden p-2 px-4 bg-white mt-3 rounded-[20px] '>
             <div className='flex justify-between px-2'>
                 <div>
                     <h1 className='font-body font-extrabold ml-2'>Activities</h1>
@@ -43,9 +43,9 @@ function ActivitiesChart() {
                     <span className='flex items-center gap-2'> <p className='w-2 h-2 rounded-full bg-[#9BDD7C] border'> </p> User</span>
                 </div>
             </div>
-            <div className="mt-3 w-full flex-1 text-xs">
+            <div className="mt-3 w-full text-xs">
 
-                <LineChart width={1000} height={230} data={data} margin={{ top: 5, right: 3, left: 20, bottom: 5, }} >
+                <LineChart width={1000} height={230} className="w-full h-auto" data={data} margin={{ top: 5, right: 3, left: 20, bottom: 5, }} >
                     <CartesianGrid  />
                     <XAxis dataKey="name" />
                     <YAxis />

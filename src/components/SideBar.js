@@ -22,7 +22,7 @@ function SideBar() {
             img:settings}
                     ]
   return (
-    <div className='w-[17%]  h-[100%]  p-10 flex flex-col justify-between bg-[#000000] rounded-[30px]'>
+    <div className='md:w-[17%] hidden sm:block md:h-[100%]  p-10 flex flex-col justify-between bg-[#000000] rounded-[30px]'>
 
     <div className='space-y-8'>
         <h1 className=" font-body text-white text-4xl font-bold ">
@@ -31,7 +31,7 @@ function SideBar() {
 
         <div className='font-body text-[17px] flex flex-col  items-start space-y-6 tracking-wider text-[#ffffff]'>
             {sideKeys.map((btn)=>
-            <button className='flex gap-2 items-center'> <img src={btn.img} alt="" />  {btn.name}</button>
+            <button className='flex gap-2 items-center hover:bg-gray-800 p-2 hover:rounded-2xl'> <img src={btn.img} alt="" />  {btn.name}</button>
             )}
         </div>
     </div>

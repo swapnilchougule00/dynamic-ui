@@ -2,7 +2,7 @@ import React from 'react'
 
 function Schedules() {
     return (
-        <div className='w-[45%] bg-[#ffff] p-4 rounded-[20px]'>
+        <div className='md:w-[45%] w-full bg-[#ffff] p-4 rounded-[20px]'>
             <div className='flex justify-between'>
                 <h1 className='font-body font-extrabold'>Today’s schedule</h1>
                 <button className='text-[#858585] flex items-center justify-center gap-1 text-sm'>See all <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">

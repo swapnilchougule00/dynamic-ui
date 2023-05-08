@@ -45,7 +45,7 @@ function DashBoard() {
         <DashBoardStats />
         <div className="">
           <ActivitiesChart />
-          <div className="mt-3 flex justify-between">
+          <div className="mt-3 flex flex-wrap gap-2 justify-between">
             <TopProductsChart />
             <Schedules />
           </div>

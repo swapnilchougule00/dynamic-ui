@@ -20,7 +20,7 @@ function TopProductsChart() {
     const COLORS = ['#00C49F', '#FFBB28', '#FF8042']
 
     return (
-        <div className='w-[45%] bg-[#ffff] p-4 rounded-[20px]'>
+        <div className='md:w-[45%] w-full bg-[#ffff] p-4 rounded-[20px]'>
             <div className='flex justify-between'>
                 <h1 className='font-body font-extrabold'>Top products</h1>
                 <select className='text-sm text-[#999999] outline-none'>
@@ -32,7 +32,7 @@ function TopProductsChart() {
                 <ResponsiveContainer width="50%" height="100%">
 
                     <PieChart width={400} height={400}>
-                        <Pie data={data} dataKey="value" cx="35%" cy="45%" labelLine={false} outerRadius={70} fill="#8884d8" >
+                        <Pie data={data} dataKey="value" cx="45%" cy="45%" labelLine={false} outerRadius={70} fill="#8884d8" >
                             {data.map((_, index) => (
                                 <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                             ))}
