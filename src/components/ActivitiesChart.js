@@ -45,7 +45,7 @@ function ActivitiesChart() {
             </div>
             <div className="mt-3 w-full flex-1 text-xs">
 
-                <LineChart width={1000} height={180} data={data} margin={{ top: 5, right: 3, left: 20, bottom: 5, }} >
+                <LineChart width={1000} height={230} data={data} margin={{ top: 5, right: 3, left: 20, bottom: 5, }} >
                     <CartesianGrid  />
                     <XAxis dataKey="name" />
                     <YAxis />

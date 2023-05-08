@@ -17,7 +17,7 @@ function Login() {
         </h1>
       </div>
 
-      <div className=" md:w-2/3 flex items-center md:h-[100vh] overflow-hidden justify-center bg-gray-100">
+      <div className=" md:w-2/3 flex  items-center md:h-[100vh]  justify-center bg-gray-100">
         {show ? <SignIn handleAuth={handleAuth}/> : <Register handleAuth={handleAuth}/>}
       </div>
     </div>

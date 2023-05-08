@@ -22,7 +22,7 @@ function SideBar() {
             img:settings}
                     ]
   return (
-    <div className='w-[17%]  h-[100%] p-10 flex flex-col justify-between bg-[#000000] rounded-[30px]'>
+    <div className='w-[17%]  h-[100%]  p-10 flex flex-col justify-between bg-[#000000] rounded-[30px]'>
 
     <div className='space-y-8'>
         <h1 className=" font-body text-white text-4xl font-bold ">
