@@ -1,5 +1,5 @@
 import React from 'react'
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, ResponsiveContainer , CartesianGrid, Tooltip } from 'recharts';
 
 function ActivitiesChart() {
 
@@ -44,8 +44,9 @@ function ActivitiesChart() {
                 </div>
             </div>
             <div className="mt-3 w-full text-xs">
+                <ResponsiveContainer width='100%' height={350}>
 
-                <LineChart width={1000} height={230} className="w-full h-auto" data={data} margin={{ top: 5, right: 10, left: 0, bottom: 5, }} >
+                <LineChart  className="w-full h-auto" data={data} margin={{ top: 5, right: 10, left: 0, bottom: 5, }} >
                     <CartesianGrid  />
                     <XAxis dataKey="name" />
                     <YAxis />
@@ -53,6 +54,7 @@ function ActivitiesChart() {
                     <Line type="monotone"  dataKey="Guest" stroke="#E9A0A0" activeDot={{ r: 8 }} />
                     <Line type="monotone" dataKey="User" stroke="#9BDD7C" />
                 </LineChart>
+                </ResponsiveContainer>
             </div>
         </div>
     )

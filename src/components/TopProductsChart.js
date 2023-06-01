@@ -38,14 +38,14 @@ function TopProductsChart() {
                             ))}
                         </Pie>
                         <Tooltip />
-                        
+
                     </PieChart>
                 </ResponsiveContainer>
                 <div className='flex flex-col gap-3 text-left'>
-                <span className='flex items-center font-bold gap-2'> <p className='w-3 h-3 rounded-full bg-[#00C49F] border'> </p>Basic Tees</span>
-                <span className='flex items-center font-bold gap-2'> <p className='w-3 h-3 rounded-full bg-[#FFBB28] border'> </p>Custom Short Pants</span>
-                <span className='flex items-center font-bold gap-2'> <p className='w-3 h-3 rounded-full bg-[#FF8042] border'> </p>Super Hoodies</span>
-                    
+                    <span className='flex items-center font-bold gap-2'> <p className='w-3 h-3 rounded-full bg-[#00C49F] border'> </p>Basic Tees</span>
+                    <span className='flex items-center font-bold gap-2'> <p className='w-3 h-3 rounded-full bg-[#FFBB28] border'> </p>Custom Short Pants</span>
+                    <span className='flex items-center font-bold gap-2'> <p className='w-3 h-3 rounded-full bg-[#FF8042] border'> </p>Super Hoodies</span>
+
                 </div>
 
             </div>
